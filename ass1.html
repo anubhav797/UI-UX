@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3b19d1;
+            color: #333;
+        }
+        header {
+            background-color: #c83232;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        img.profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        ul {
+            list-style-type: square;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Anubhav Mittal</h1>
+
+        <p><em>Web Developer</em></p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am <strong>Anubhav Mittal</strong>,  <b>a passionate web developer</b> with a love for 
+            <i>creating beautiful and functional websites</i>. I enjoy working with 
+            <u>HTML, CSS, and JavaScript</u> to build amazing user experiences. 
+            I believe in <mark>continuous learning</mark> and improving my skills.
+        </p>
+
+        <img src="profile.jpg" alt="Profile Photo" title="Anubhav Mittal" class="profile">
+
+    </section>
+
+    <section id="education">
+
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td rowspan="2"> B.Tech </td>
+                <td>Thapar University</td>
+                <td>2027</td>
+            </tr>
+            <tr>
+                <td colspan="2">Specialization: Web Development</td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>DPS High School</td>
+                <td>2022</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                Portfolio Website - <a href="https://github.com/username/portfolio" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                Weather App - <a href="https://github.com/username/weather-app" target="_blank">View on GitHub</a>
+            </li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:amittal3_be23@thapar.edu">Email</a></p>
+        <p>
+            Other Contacts :
+            <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/username" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        Made by Anubhav Mittal
+    </footer>
+
+</body>
+</html>
