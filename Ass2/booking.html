@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+</head>
+<body>
+    
+     <header>Booking Form</header>
+
+     <div class="booking">
+
+        <form action="action.php">
+
+             <label for="name"> Full Name </label>
+             <input type="text" placeholder="Enter your Full Name"
+             id="name" required>
+             
+             <label for="email">Type your Email</label>
+             <input type="email" placeholder="Enter your Email"
+             id="email" required>
+
+             <label for="Destination">Destination</label>
+             <select id="destination" required>
+                <option value=".">Select your Destination</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Europe">Europe</option>
+             </select>
+            
+             <label for="Packages">Packages</label>
+             <select id="package" required>
+                <option value=".">Choose your Package</option>
+                <option value="Beach Escape">Beach Escape</option>
+                <option value="Adventure Trek">Adventure Trek</option>
+                <option value="European Explorer">European Explorer</option>
+             </select>
+             
+             <label for="dates">Travel Dates:</label>
+             <input type="date" id="dates" required>
+      
+            <label for="notes">Special Requests:</label>
+            <textarea id="notes" rows="2"></textarea>
+
+            <button type="submit">Submit your Bookings</button>
+
+        </form>
+
+     </div>
+
+     <style>
+
+        header{
+            text-align: center;
+            font-size: 40px;
+        }
+
+        form{
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form select, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        
+        form button:hover{
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+        }
+        
+     </style>
+
+</body>
+</html>
