@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Gallery</title>
+  
+</head>
+<body>
+
+  <header><h1>Gallery</h1></header>
+  
+  <div class=" gallery">
+
+    <figure>
+      <img src="maldives.jpg" alt="Beautiful Maldives Beach">
+      <figcaption>Relax on beaches in Maldives</figcaption>
+    </figure>
+
+    <figure>
+      <img src="nepal.jpg" alt="Himalayan Trek in Nepal">
+      <figcaption>Adventure awaits in the Himalayas</figcaption>
+    </figure>
+
+    <figure>
+      <img src="europe.jpg" alt="Eiffel Tower in Paris">
+      <figcaption>Experience culture across Europe</figcaption>
+    </figure>
+
+  </div>
+
+  <footer>
+    © 2025 Dream Travel Agency
+</footer>
+
+      <style>
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .gallery figcaption {
+            text-align: center;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+      </style>
+      
+</body>
+</html>
+
