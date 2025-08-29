@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - College Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <h1>College Fest 2025</h1>
+    
+    </header>
+
+    <main>
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery-grid">
+            <img src="images/photo1.jpg" alt="Event 1">
+            <img src="images/photo2.jpg" alt="Event 2">
+            <img src="images/photo3.jpg" alt="Event 3">
+            <img src="images/photo4.jpg" alt="Event 4">
+            <img src="images/photo5.jpg" alt="Event 5">
+        </div>
+    </main>
+
+    <style>
+
+         .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+         }
+
+         .gallery-grid img{
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 25%;
+         }
+         
+    </style>
+
+</body>
+</html>
