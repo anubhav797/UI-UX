@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <!-- Ques3 -->
+    <h2>User Information Form</h2>
+
+    <form id="userForm">
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="Enter your email" /><br /><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="0" /><br /><br />
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    <script>
+
+        //Ques 1
+        const num1 = Number(prompt("Enter number 1:"));
+        const num2 = Number(prompt("Enter number 2:"));
+
+        alert(`Addition: ${num1 + num2}`);
+
+        alert(`Subtraction: ${num1 - num2}`);
+
+        alert(`Multiplication: ${num1 * num2}`);
+
+        alert(`Division: ${num1 / num2}`);
+
+        //Ques 2
+        const arr = [5, 6, 2, 8, 3];
+
+        let maxNum = arr[0];
+
+        for (let i = 1; i < 5; i++) {
+            if (arr[i] > maxNum) {
+                maxNum = arr[i];
+            }
+        }
+
+        alert('Maximum number in the array is : ' + maxNum);
+
+        let minNum = arr[0];
+
+        for (let i = 1; i < 5; i++) {
+            if (arr[i] < minNum) {
+                minNum = arr[i];
+            }
+        }
+
+        alert('Minimum number in the array is : ' + minNum);
+
+        //Ques 3
+        document.getElementById('userForm').addEventListener('submit', function () {
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email');
+            const age = document.getElementById('age').value;
+
+            if (!name) {
+                alert('name is empty');
+            }
+
+            if (!age) {
+                alert('age is empty');
+            }
+            else if (age >= 18 && age <= 20) {
+                alert('age is between 18 and 20');
+            }
+            else {
+                alert('age is not between 18 and 20');
+            }
+            if (!email.checkValidity()) {
+                alert(' email is not in correct form ');
+            }
+
+            else {
+                alert('email looks good');
+            }
+
+        });
+
+        //Ques4
+
+        let student = {
+            name: "Anubhav",
+            age: 20,
+            grades: 85
+        };
+
+        // 1. Add a new property "class"
+        student.class = "B.Sc Computer Science";
+
+        // 2. Update the student's grade
+        student.grades = 92;
+
+        // 3. Display all student information
+        for (let key in student) {
+            console.log(key + " : " + student[key]);
+        }
+
+        alert(
+            "Student Information:\n" +
+            "Name: " + student.name + "\n" +
+            "Age: " + student.age + "\n" +
+            "Grades: " + student.grades + "\n" +
+            "Class: " + student.class
+        );
+
+        //Ques 5
+        function processArray(arr) {
+            // 1. Remove all odd numbers
+            let evenNumbers = arr.filter(num => num % 2 === 0);
+
+            // 2. Multiply the remaining numbers by 2
+            let doubled = evenNumbers.map(num => num * 2);
+
+            // 3. Find the sum of the resulting numbers
+            let sum = doubled.reduce((acc, num) => acc + num, 0);
+
+            return sum;
+        }
+
+        // Example usage:
+        const numbers = [1, 2, 3, 4, 5, 6];
+        let result = processArray(numbers);
+
+        console.log("Result:", result);
+        alert("Result: " + result);
+
+
+
+    </script>
+
+</body>
+
+</html>
